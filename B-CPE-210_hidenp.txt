@@ -1,0 +1,48 @@
+B2 - Stumpers
+B-CPE-210
+
+Hidenp
+Solo Stumper
+
+1.05
+
+Hidenp
+binary name:
+group size:
+repository name:
+repository rights:
+language:
+compilation:
+
+hidenp
+1
+CPE_solostumper_$STUMPERNUMBER_$ACADEMICYEAR
+ramassage-tek
+C
+via Makeﬁle, including re, clean and fclean rules
+
+• Your repository must contain the totality of your source files, but no useless files
+(binary, temp files, obj files,...).
+• Error messages have to be written on the error output, and the program should
+then exit with the 84 error code (0 if there is no error).
+
+For this project, the only authorized function is write.
+
+Write a program that takes two strings and displays 1\n if the first string is hidden in the second string.
+Otherwise, it displays 0\n.
+A string is hidden in the second, if each character from the first string can be found in the second one in the
+same order as in the first string.
+∇
+Terminal
+- + x
+∼/B-CPE-210> ./hidenp padinton “paqefwtdjetyiytjneytjoeyjnejeyj” | cat -e
+1$
+∼/B-CPE-210> ./hidenp ddf6vewg64f gtwthgdwthdwfteewhrtag6h4ffdhsd | cat -e
+0$
+∼/B-CPE-210> ./hidenp >/dev/null || echo “Exit status: $?”
+Usage: ./hidenp needle haystack
+Exit status: 84
+
+1
+
+
